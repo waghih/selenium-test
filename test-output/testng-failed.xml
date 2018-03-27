@@ -5,8 +5,16 @@
     <classes>
       <class name="TestSuite.LoginTest">
         <methods>
+          <include name="verify6"/>
+          <include name="verify7"/>
+          <include name="verify1"/>
           <include name="verify2"/>
           <include name="setup"/>
+          <include name="verify3"/>
+          <include name="verify4"/>
+          <include name="close"/>
+          <include name="open"/>
+          <include name="verify5"/>
         </methods>
       </class> <!-- TestSuite.LoginTest -->
     </classes>

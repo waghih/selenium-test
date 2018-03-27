@@ -7,17 +7,13 @@ import org.openqa.selenium.support.PageFactory;
 
 public class LoginPage {
 
-//	public static void main(String[] args) {
-//		// TODO Auto-generated method stub
-//
-//	}
-//	private WebDriver driver;
-	@FindBy(name="username")
+	@FindBy(name="login")
     WebElement username;
     @FindBy(name="password")
     WebElement password;
-    @FindBy(className="btn-primary")
+    @FindBy(name="commit")
     WebElement button;
+
     public LoginPage(WebDriver driver) {
       //initialize elements
     	PageFactory.initElements(driver, this);
@@ -30,12 +26,12 @@ public class LoginPage {
     }
      
     private void set_username(String user_name) {
-//    	username.clear();
+    	username.clear();
     	username.sendKeys(user_name);
     }
      
     private void set_password(String user_password) {
-//    	password.clear();
+    	password.clear();
     	password.sendKeys(user_password);
     }
      
